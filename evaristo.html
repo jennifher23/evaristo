@@ -1,0 +1,374 @@
+<html>
+  <head>
+     <title></title>
+     <style type="text/css">
+.body{
+    width:  320px;
+    height: 470px;
+    background-color: #FFB57B;
+    border-radius: 50% 50% 50% 50%;
+    border:5px solid #000;
+    position:relative;
+    margin:50px auto;
+    overflow:hidden;    
+}
+/*Ojos*/
+.ojos {
+    position:relative;
+    left:100px;
+    top:80px;
+    width:140px;
+    z-index:20;
+}
+.ojoIzquierdo{
+  background:#000000;
+  position: relative; 
+  border:10px solido #000;
+  width:60px;
+  height:60px;
+  float: left;
+  display:inline-block;
+  border-radius:100%;
+}
+.ojoDerecho{
+  background:#000000;
+  position: relative;
+  border:10px solido #000;
+  width:60px;
+  height:60px;
+  margin ring:100px;
+  float: right;
+  display:inline-block;
+  border-radius:100%;
+}
+/*Nariz*/
+.nariz {
+  width:100px;
+  height:50px;
+  background:#F29175;
+  position: absolute;
+  top:195px;
+  left:645px;
+  border:1px solid #0000;
+  z-index:10;
+  border-radius:100%;
+  margin-right:1; 
+}
+/*Boca*/
+.boca{
+  width:200px;
+  height:80px;
+  background:transparent;
+  position:absolute;
+  top:230px;
+  left:600px;
+  border-radius:50%;
+  z-index:10px;
+  border-bottom:5px solid #000;
+}
+.mejilla{
+    width:20px;
+    height:20px;
+    background:#df4a64;
+    position: relative;
+    top:20px;
+    border: 5px solid #df4a64;
+    border-bottom:5px solid transparent;
+    border-radius:50% 50% 20% 20%;
+    display:inline-block;
+}
+.mejilla.Izquierda{
+  left: -10px;
+}
+.mejilla.Derecha{
+  left:150;
+}
+/*Bigote*/
+.bigote{
+  width: 100px;%;
+  height: 50px;
+  position: relative;
+  background:#fff;
+  bottom:-50px;
+  border: 5px solidcolor #000;
+  border-radius: 60%;
+  top:-350px; 
+  right:-630;
+}
+/*Camisa*/
+.camisa{
+  width:300px;
+  height:60px;
+  position: relative;
+  background:rgb(245, 241, 241);
+  bottom:300px;
+  border-top:5px solid #000; 
+  height:50;
+  left: 520px;
+  border-radius: 5% 5% 5% 10%;
+  z-index:50;  
+}
+.cuello{
+  width:50px;
+  height:30px;
+  position:relative;
+  background:#fff;
+  top:-3px;
+  float:left; 
+  border:5px solid #000;
+  -moz-transform: rotate(30deg);
+-webkit-transform: rotate(30deg);
+-o-transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+transform: rotate(30deg);
+}
+.cuello.primero{
+  left:75px;
+}
+.cuello.segundo{
+  left:95px;
+  -moz-transform: rotate(-30deg);
+-webkit-transform: rotate(-30deg);
+-o-transform: rotate(-30deg);
+-ms-transform: rotate(-30deg);
+transform: rotate(-30deg);
+}
+.cuello_corbata{
+  width:55px;
+  height:40px;
+  background:#f00200;
+  border:5px solid #000;
+  position: absolute;
+  left:110px;
+  bottom:1px;
+  z-index:40;
+}
+.cola_corbata{
+  width:55px;
+  height:55px;
+  background:#f00200;
+  border:5px solid #000;
+  position: absolute;
+  left:635px;
+  top:375px;
+  bottom:0;
+  z-index:50;
+  -moz-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);   
+}
+.pantalones{
+  width: 20%;
+  height:95px;
+  background:#000;
+  position:relative;
+  bottom:55%;
+  border-radius: 20% 20%;
+  border:50px solid #000;
+  z-index:10;
+  left: 485px;
+}
+.zapatos{
+  position:absolute;
+  top: 100px;
+  width: 140px;
+  z-index:100;
+}
+.zapatoIzquierdo{
+  background:#7c3909;
+  position: absolute;
+  border:6px solid #000;
+  left: 10px;
+  width:100px;
+  height:220px;
+  display:inline-block;
+  border-radius:120%;
+  margin: 250px 510px; 
+}
+.zapatoDerecho{
+  background:#7c3909;
+  position: absolute;
+  border:solid 6px #000;
+  width:105px;
+  height:50px;
+  right:10px;
+  float: right;
+  margin:-455px -660px;
+  display:inline-block;
+  border-radius:100%;
+  bottom:0px;
+}
+.cabello{
+  height: 230px;
+  margin: 40px;
+  position: absolute;
+  width: 400px;
+  z-index: 100px;
+}
+.cabelloIzquierdo{
+  width:90px;
+  height:90px;
+  position:absolute;
+  background:#d4d1d0;
+  top:-50;
+  left:80px;
+  border-radius:100px;
+  border: solid 5px black;
+  margin: -700px 325px;
+}
+.cabelloIzquierdoUno{
+  width:90px;
+  height:90px;
+  position:absolute;
+  background:#d4d1d0;
+  top:-50;
+  left:80px;
+  border-radius:100px;
+  border: solid 5px black;
+  margin: -40px -60px;
+}
+.cabelloDerecho{
+  width:90px;
+  height:90px;
+  position:absolute;
+  background:#d4d1d0;
+  top:-50;
+  left:80px;
+  border-radius:100px;
+  border: solid 5px rgb(12, 12, 12);
+  margin: -710px 690px;
+}
+.cabelloDerechoUno{
+    width:90px;
+  height:90px;
+  position:absolute;
+  background:#d4d1d0;
+  top:-50;
+  left:80px;
+  border-radius:100px;
+  border: solid 5px black;
+  margin: -30px -120px;
+}
+.brazoIzquierdo{
+  width:80px;
+  height:30px;
+  background:#000;
+  border:5px solid #000;
+  position: absolute;
+  margin:-540px 420px;
+}
+.manoIzquierda{
+    width:20px;
+    height:20px;
+    background:#FFB57B;
+    position: relative;
+    top:40px;
+    border: 5px solid #000;
+    border-radius:20% 20% 20% 20%;
+    margin: -40px -20px;
+}
+.brazoDerecho{
+  width:80px;
+  height:30px;
+  background:#000;
+  border:5px solid #000;
+  position: absolute;
+  margin:-540px 820px;
+}
+.manoDerecha{
+    width:20px;
+    height:20px;
+    background:#FFB57B;
+    position: relative;
+    top:40px;
+    border: 5px solid #000;
+    border-radius:20% 20% 20% 20%;
+    margin: -40px 70px;
+}
+/*Sombrero*/
+.sombrero{
+  width:8%;
+  height:-5%;
+  background:#000;
+  position:relative;
+  bottom: 138%;
+  border-radius:0%;
+  border:50px solid #000;
+  z-index:10; 
+  left: 565px;
+}
+.sombreroUno{
+  width:80px;
+  height:30px;
+  background:rgb(80, 41, 172);
+  border:5px solid #000;
+  position: absolute;
+  margin:-540px 820px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    </style>
+  </head>
+<body>
+  <div class="body">
+    <div class="ojos">
+      <div class="ojoIzquierdo"></div>
+      <div class="ojoDerecho"></div>
+    </div>
+  </div>
+    <div class="nariz"></div>
+    <div class="boca">
+      <div class="mejilla Izquierda"></div>
+      <div class="mejilla Derecha"></div>
+    </div>
+        <div class="bigote"></div>
+        <div class="camisa">
+          <div class="cuello primero"></div>
+          <div class="corbata">
+            <div class="cuello_corbata"></div>
+          </div>
+          <div class="cuello segundo"></div>
+        </div>
+        <div class="cola_corbata"></div>
+          <div class="pantalones"></div>  
+        </div>
+  <div class="zapatos">
+          <div class="zapatoIzquierdo"></div>
+          <div class="zapatoDerecho"></div>
+  </div>
+    <div class="brazos">
+      <div class="brazoIzquierdo">
+        <div class="manoIzquierda"></div>
+      </div>
+      <div class="brazoDerecho">
+        <div class="manoDerecha"></div>
+      </div>
+    </div>
+    <div class="cabello">
+      <div class="cabelloIzquierdo">
+        <div class="cabelloIzquierdoUno"></div>
+      </div>
+      <div class="cabelloDerecho">
+        <div class="cabelloDerechoUno"></div>
+      </div>
+    </div>
+    <div class="sombrero">
+      <div class="sombreroUno"></div>
+    </div>
+</body>
+  </html>
+
+
